@@ -18,6 +18,7 @@ import {
   Facebook
 } from 'lucide-react';
 import { EXPERIENCES, EDUCATION, SKILLS, CONTACT } from './constants';
+import swatiHero from './static/swatiimage.jpeg';
 
 const Section = ({ children, id, className = "" }: { children: React.ReactNode, id?: string, className?: string }) => (
   <section id={id} className={`py-20 px-6 md:px-12 max-w-7xl mx-auto ${className}`}>
@@ -98,10 +99,9 @@ export default function App() {
         >
           <div className="aspect-square rounded-[2rem] overflow-hidden bg-slate-800 relative z-10">
             <img 
-              src="https://picsum.photos/seed/marketing/800/800" 
+              src={swatiHero} 
               alt="Swati Rajput" 
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100"
-              referrerPolicy="no-referrer"
             />
           </div>
           <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-3xl -z-0"></div>
@@ -293,7 +293,6 @@ export default function App() {
           <div className="flex gap-6">
             <a href="#" className="text-slate-500 hover:text-primary transition-colors">LinkedIn</a>
             <a href="#" className="text-slate-500 hover:text-primary transition-colors">Twitter</a>
-            <a href="#" className="text-slate-500 hover:text-primary transition-colors">Behance</a>
           </div>
         </div>
       </footer>
