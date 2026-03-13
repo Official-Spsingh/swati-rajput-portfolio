@@ -14,8 +14,7 @@ import {
   Globe,
   Search,
   ShoppingBag,
-  Instagram,
-  Facebook
+  Linkedin
 } from 'lucide-react';
 import { EXPERIENCES, EDUCATION, SKILLS, CONTACT } from './constants';
 import swatiHero from './static/swatiimage.jpeg';
@@ -73,20 +72,19 @@ export default function App() {
             </span>
             Available for Opportunities
           </div>
-          <h1 className="font-display text-6xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.1] text-white">
-            Digital Marketing <br />
-            <span className="text-primary">Strategist.</span>
+          <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.1] text-white">
+            Swati Rajput: <br />
+            <span className="text-primary text-4xl md:text-6xl">Digital Marketing Strategist.</span>
           </h1>
           <p className="text-lg text-slate-400 mb-8 max-w-lg leading-relaxed">
-            I'm Swati Rajput, a results-driven digital marketer specializing in Meta Ads, SEO, and E-commerce growth. I help brands build a powerful online presence.
+            Results-driven digital marketer and <strong className="text-white">SEO Expert</strong> specializing in Meta Ads, Google Ads, and e-commerce growth. I help brands build a powerful online presence.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#experience" className="flex items-center gap-2 bg-white text-slate-950 px-6 py-3 rounded-xl font-semibold hover:bg-slate-200 transition-all">
               View Work <ChevronRight className="w-4 h-4" />
             </a>
             <div className="flex items-center gap-4 px-4">
-              <a href="#" className="text-slate-500 hover:text-primary transition-colors"><Instagram className="w-5 h-5" /></a>
-              <a href="#" className="text-slate-500 hover:text-primary transition-colors"><Facebook className="w-5 h-5" /></a>
+              <a href="https://www.linkedin.com/in/swati-rajput-6406ab291/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-primary transition-colors"><Linkedin className="w-5 h-5" /></a>
             </div>
           </div>
         </motion.div>
@@ -291,8 +289,7 @@ export default function App() {
             © {new Date().getFullYear()} Swati Rajput. All rights reserved.
           </div>
           <div className="flex gap-6">
-            <a href="#" className="text-slate-500 hover:text-primary transition-colors">LinkedIn</a>
-            <a href="#" className="text-slate-500 hover:text-primary transition-colors">Twitter</a>
+            <a href="https://www.linkedin.com/in/swati-rajput-6406ab291/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-primary transition-colors">LinkedIn</a>
           </div>
         </div>
       </footer>
