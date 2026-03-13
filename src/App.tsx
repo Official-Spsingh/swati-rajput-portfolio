@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  ExternalLink, 
-  ChevronRight, 
-  Briefcase, 
-  GraduationCap, 
-  Layout, 
-  Megaphone, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  ExternalLink,
+  ChevronRight,
+  Briefcase,
+  GraduationCap,
+  Layout,
+  Megaphone,
   Palette,
   Globe,
   Search,
@@ -49,7 +49,7 @@ export default function App() {
             <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
           </div>
-          <a 
+          <a
             href={`mailto:${CONTACT.email}`}
             className="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-sm hover:shadow-md"
           >
@@ -77,7 +77,7 @@ export default function App() {
             <span className="text-primary text-4xl md:text-6xl">Digital Marketing Strategist.</span>
           </h1>
           <p className="text-lg text-slate-400 mb-8 max-w-lg leading-relaxed">
-            Results-driven digital marketer and <strong className="text-white">SEO Expert</strong> specializing in Meta Ads, Google Ads, and e-commerce growth. I help brands build a powerful online presence.
+            Results-driven digital marketing executive and <strong className="text-white">SEO Expert</strong> specializing in Meta Ads, Google Ads, and e-commerce growth. I help brands build a powerful online presence.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#experience" className="flex items-center gap-2 bg-white text-slate-950 px-6 py-3 rounded-xl font-semibold hover:bg-slate-200 transition-all">
@@ -89,24 +89,24 @@ export default function App() {
           </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="relative"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="aspect-square rounded-[2rem] overflow-hidden bg-slate-800 relative z-10">
-            <img 
-              src={swatiHero} 
-              alt="Swati Rajput" 
+            <img
+              src={swatiHero}
+              alt="Swati Rajput"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100"
             />
           </div>
           <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-3xl -z-0"></div>
           <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-primary/10 rounded-full blur-3xl -z-0"></div>
-          
+
           {/* Floating Stats Card */}
-          <motion.div 
+          <motion.div
             className="absolute -bottom-4 -right-4 glass-card p-6 rounded-2xl z-20 hidden md:block"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -117,8 +117,8 @@ export default function App() {
                 <Search className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-white">SEO Expert</div>
-                <div className="text-xs text-slate-400 font-medium uppercase tracking-wider">Strategy & Growth</div>
+                <div className="text-2xl font-bold text-white leading-tight">Digital</div>
+                <div className="text-xs text-slate-400 font-medium uppercase tracking-wider">Marketing Executive</div>
               </div>
             </div>
           </motion.div>
@@ -187,7 +187,7 @@ export default function App() {
 
         <div className="space-y-12">
           {EXPERIENCES.map((exp, index) => (
-            <motion.div 
+            <motion.div
               key={exp.company}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -248,7 +248,7 @@ export default function App() {
             <p className="text-white/80 text-xl mb-12">
               Let's collaborate on your next project and create something extraordinary together.
             </p>
-            
+
             <div className="grid sm:grid-cols-2 gap-8">
               <a href={`mailto:${CONTACT.email}`} className="flex items-center gap-4 group">
                 <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
@@ -270,7 +270,7 @@ export default function App() {
               </a>
             </div>
           </div>
-          
+
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
           <div className="absolute bottom-0 right-0 p-12 hidden lg:block">
